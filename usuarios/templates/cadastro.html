@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>This is the Title of the Page</title>
+    </head>
+    <body>
+        <h1>Página de cadastro</h1>
+
+        <form action="/cadastro" method="POST">
+        {% csrf_token %}
+            <label for="">username</label>
+            <input type="text" id="username" Nome="username" placeholder="criate a username ( only letters and numbers)" requered>
+            <br>
+            <label for="">Nome</label>
+            <input type="text" id="fname" Nome="fname" placeholder="enter your first name" requered>
+             <br>
+            <label for="">Apelido</label>
+            <input type="text" id="lname" Nome="lname" placeholder="enter your Last name" requered>
+            <br>
+            <label for="">Email</label>
+            <input type="text" id="email" Nome="email" placeholder="enter your email" requered>
+             <br>
+            <label for="">Password</label>
+            <input type="text" id="pass1" Nome="pass1" placeholder="criate" requered>
+             <br>
+            <label for="">Repassword</label>
+            <input type="text" id="pass2" Nome="pass2" placehold="confirm your password" requered>
+
+             <button type="submit">Cadastro</button>
+
+        
+        </form>
+     
+        <script src="" async defer></script>
+    </body>
+</html>
